@@ -6,6 +6,9 @@ plugins {
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
     id("io.realm.kotlin")
+
+    // @Todo Missing json connection
+//    id("com.google.gms.google-services")
 }
 
 android {
