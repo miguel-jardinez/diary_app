@@ -6,6 +6,7 @@ plugins {
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
     id("io.realm.kotlin")
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 
     // @Todo Missing json connection
 //    id("com.google.gms.google-services")
@@ -44,9 +45,12 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
     buildFeatures {
         compose = true
+        buildConfig = true
     }
+
     composeOptions {
         kotlinCompilerExtensionVersion = "1.3.2"
     }
